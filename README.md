@@ -14,3 +14,6 @@ To use or contribute, keep in mind: this project remove all file system function
 | :---: | :---: | :--- |
 | **Basic**      | -- | |
 | zlib           | 🔨 | removed GZ file utilities |
+| brotli         | ❌ | dictionary necessary space is large than limit |
+| libpng         | 🔨 | high level API transform mask overflow the int, so avoid transforms. |
+| giflib         | ❌ | no space for hash tables (need 32kb of RAM O_O) |
