@@ -1,6 +1,7 @@
-
-set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}/../zlib/1.2.12" "${CMAKE_CURRENT_LIST_DIR}/../zlib/1.2.12/b")
-set(ZLIB_LIBRARY "${CMAKE_CURRENT_LIST_DIR}/../zlib/1.2.12/b/libzlibstatic.a")
+if(NOT ZLIB_INCLUDE_DIR)
+  set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}/../../zlib/1.2.12" "${CMAKE_CURRENT_LIST_DIR}/../../zlib/1.2.12/b")
+  set(ZLIB_LIBRARY "${CMAKE_CURRENT_LIST_DIR}/../zlib/1.2.12/b/libzlibstatic.a")
+endif()
 
 cmake_minimum_required(VERSION 3.1)
 cmake_policy(VERSION 3.1)
